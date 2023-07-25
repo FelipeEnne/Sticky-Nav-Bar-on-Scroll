@@ -13,3 +13,9 @@ function smoothScroll(e) {
     behavior: "smooth",
   });
 }
+
+//sticky header
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
