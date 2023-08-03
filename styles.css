@@ -165,3 +165,54 @@ h2 {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* RESPONSIVE MENU */
+
+@media screen and (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  nav i {
+    color: var(--white);
+    font-size: 2.4rem;
+    cursor: pointer;
+  }
+
+  .close {
+    position: absolute;
+    right: 3rem;
+    transform: translateY(-20rem);
+    transition: all 0.5s;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid skyblue;
+    border-radius: 3px;
+    z-index: 999;
+    transform: translateY(-200%);
+    transition: all 0.5s;
+  }
+
+  .nav-list li {
+    width: 80%;
+    padding: 5px 0;
+    font-size: 1.6rem;
+    border-bottom: 1px solid var(--white);
+    text-align: center;
+  }
+
+  .nav-list li:first-child {
+    border-top: 1px solid var(--white);
+  }
+
+  .nav-list li a:hover {
+    color: var(--color-sec);
+  }
+}
