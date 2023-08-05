@@ -47,6 +47,20 @@ img {
 header {
   width: 100%;
   background-color: var(--dark-grey); 
+  background-color: var(--dark-grey); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem 0;
+  z-index: 111;
+  transition: all 0.5s;
+}
+
+header.sticky {
+  background-color: var(--grey);
+  /* border-bottom: 1px solid #777; */
+  padding: 1rem 0;
+  background-color: var(--dark-grey);
   position: fixed;
   top: 0;
   left: 0;
@@ -62,10 +76,11 @@ header.sticky {
 }
 
 nav {
-  /* height: 7.5rem; */
+  height: 7.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .logo {
   font-size: 4.5rem;
@@ -76,6 +91,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 .nav-list li {
@@ -83,7 +99,7 @@ nav {
   margin: 0 1.5rem;
 }
 
-li a {
+.nav-list li a {
   color: var(--white);
   font-size: 1.6rem;
   text-decoration: none;
