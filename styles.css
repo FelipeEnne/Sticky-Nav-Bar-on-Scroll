@@ -182,6 +182,12 @@ h2 {
   transform: translateY(0);
 }
 
+/* Hide Submenu */
+.submenu-three {
+  display: none;
+}
+
+
 /* RESPONSIVE MENU */
 
 @media screen and (max-width: 600px) {
