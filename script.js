@@ -84,6 +84,7 @@ const hideMenu = () => {
   hamburger.style.display = "block";
   menuWrapper.style.transform = "translateX(-200%)";
   menu.style.transform = "translateX(200%)";
+  subMenuThree.style.transform = "translateX(-100%)";
 };
 
 menuWrapper.addEventListener("click", hideMenu);
