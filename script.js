@@ -138,3 +138,7 @@ function scrollProgress() {
     newsLetter.style.transform = "translateX(-100%)";
   });
 }
+
+AOS.init({
+  duration: 1000,
+});
